@@ -32,13 +32,14 @@ getFromSave()
 escolha=1
 while escolha != 4:
     exibeLista()
-    escolha = int(input("Oque deseja fazer?"))
+    
     print("""
         1- Adicionar um item
         2- Marcar como feito
         3- Limpar os feitos
         0- Sair
     """)
+    escolha = int(input("Oque deseja fazer?"))
     if escolha == 1:
         x = input("Digite a tarefa: ")
         toDo.append(str(x))
